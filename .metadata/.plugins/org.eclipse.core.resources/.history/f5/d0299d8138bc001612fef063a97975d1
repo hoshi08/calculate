@@ -1,0 +1,11 @@
+//クラスのアクセス修飾子練習
+
+package mypackage ;
+
+public class Access_modifiers_1 {
+	public void printMessage(){
+		System.out.println("mypackageパッケージのMyClassのprintMessageメソッドです");
+	}
+
+}
+

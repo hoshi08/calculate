@@ -1,0 +1,23 @@
+import java.io.*;
+
+
+
+public class test5 {
+
+	public static void main(String[] args) {
+		Triangle tri = new Triangle();
+		tri.p0 = new Point(0.0);
+		tri.P1 = new Point(10.0);
+		tri.P1 = new Point(10.0);
+
+				try{
+					FileOutputStream fs = new FileOutputStream("C:\\test\\test_3");
+					ObjectOutputStram os = new ObjectOutputStream(fs);
+					os.writeObject(tri);
+							os.close();
+
+	} catch(IOException e) {
+		System.out.println(e);
+	}
+	}
+}

@@ -1,0 +1,33 @@
+//オーバーロード練習
+
+class Point{
+	int x;
+	int y;
+
+	//座標地を変更する。ｘとｙの値は引数で指定されたものにする
+	void set(int x,int y){
+		this.x = x;
+		this.y = y;
+		}
+
+	//座標地を変更する。xとyは引数で渡されるインスタンスの値と同じにする。
+	void set(Point p){
+		this.x = p.x;
+		this.y = p.y;
+		}
+	}
+
+public class Overload_1 {
+	public static void main(String[] srgs){
+		Point p1 = new Point();
+		System.out.println("p1の座標は (" + p1.x + ", " + p1.y + " )");
+
+		p1.set(10, 300);
+		System.out.println("p1の座標は (" + p1.x + ", " + p1.y + " )");
+
+		Point p2 = new Point();
+		p2.set(p1);
+		System.out.println("p2の座標は (" + p2.x + ", " + p2.y + " )");
+	}
+
+}

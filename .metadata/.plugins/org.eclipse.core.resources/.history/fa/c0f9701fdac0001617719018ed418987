@@ -1,0 +1,17 @@
+package jp.co.iccom.hoshi_kouji.calculate_sales;
+
+import java.io.BufferedReader;
+
+public class Product {
+	private static String str;
+	public static void main(String[] args) {
+		System.out.println(args[1]);
+
+		File file = new File(args[1], "commodity.lst");
+
+
+
+}
+
+
+}

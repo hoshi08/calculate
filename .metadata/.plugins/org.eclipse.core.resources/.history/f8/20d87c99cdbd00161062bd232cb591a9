@@ -1,0 +1,26 @@
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class test {
+	public static void main(String[] args) {
+		 System.out.println(args[0]);
+	
+	/*  try{
+		  File file = new File("C:\\office\\office.txt");
+
+		  FileReader fr = new FileReader(file);
+		  BufferedReader br = new BufferedReader(fr);
+		  String s;
+		  while((s = br.readLine()) != null) {
+			  System.out.println(s + "を保持しました");
+		  }
+		  br.close();
+		  } catch(IOException e) {
+			  System.out.println("「支店定義ファイルが存在しません」");
+		  }*/
+	  }
+  }
+

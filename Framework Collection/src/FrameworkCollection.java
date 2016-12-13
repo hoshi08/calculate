@@ -1,0 +1,22 @@
+/*フレームワークコレクション
+【マップコレクション】*/
+
+import java.util.HashMap;
+
+public class FrameworkCollection {
+	public static void main(String[] args){
+		HashMap<String, String>map = new HashMap<String, String>();
+
+		map.put("first name", "浩司");
+		map.put("last name", "星");
+		map.put("addres", "埼玉県坂戸市☆☆◎◎123-123");
+
+	/*	System.out.println(map.entrySet());*/
+		System.out.println(map.values());
+		System.out.println(map.keySet());
+		System.out.println(map.get("first name"));
+		System.out.println(map.get("last name"));
+		System.out.println(map.get("addres"));
+		System.out.println(map.get("first nameeeees"));
+	}
+}

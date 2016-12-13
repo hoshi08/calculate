@@ -1,0 +1,28 @@
+package jp.co.iccom.hoshi_kouji.calculate_sales;
+
+import java.io.BufferedReader;
+
+public class Product {
+	private static String str;
+	public static void main(String[] args) {
+		System.out.println(args[1]);
+
+		File file = new File(args[1], "commodity.lst");
+		if(file.exist()){
+
+			System.out.println(商品定義ファイルは存在しません)
+
+		}
+		HashMap<String,String> product = new HashMap<String,String>();
+
+		try
+
+
+
+
+
+
+}
+
+
+}

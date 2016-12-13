@@ -1,0 +1,21 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.IO.*;
+public class test {
+  public static void main(String[] args) {
+	  try{
+		  File file = new File("C:\\office\\office.txt");
+		  FileReader fr = new FileReader(file);
+		  BufferedReader br = new BufferedReader(fr);
+		  String s;
+		  while((s = br.readLine()) != null) {
+			  System.out.println(s + "を保持しました");
+		  }
+			  br.close();
+		  } catch(IOException e) {
+
+		  }
+	  }
+  }
+

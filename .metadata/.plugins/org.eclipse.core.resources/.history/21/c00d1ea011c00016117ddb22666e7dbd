@@ -1,0 +1,30 @@
+
+public class test02 {
+
+	  public static void main(String args[]){
+		    String str = "りんご,レモン,すいか,ぶどう";
+		    String[] fruit = str.split(",", 0);
+
+		    for (int i = 0 ; i < fruit.length ; i++){
+		      System.out.println(i + "番目の要素 = :" + fruit[i]);
+		    }
+		  }
+		}
+
+
+class StringSample10 {
+    public static void main(String[] args) {
+        String message ;
+        message = "aaa.bbb.ccc.ddd";//[1]
+        String[] resultArray1 = message.split(".");//[2]
+        String[] resultArray2 = message.split("\\.");//[3]
+         System.out.println("エスケープ処理をしなかった場合の分割数：" + resultArray1.length); //[4]
+         System.out.println("エスケープ処理をした場合の分割数：" +resultArray2.length); [5]
+        for (int i = 0; i < resultArray1.length; i++) {//[6]
+            System.out.println(resultArray1[i]);//[7]
+        }
+         for (int i = 0; i < resultArray2.length; i++) {//[8]
+            System.out.println(resultArray2[i]);//[9]
+        }
+    }
+}

@@ -1,0 +1,63 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class split01 {
+
+	public static void main(String[] args) {
+		System.out.println(args[0]);
+//
+//		String str = new String(args[0]);
+//		String[] strAry = str.split(",");
+//
+//		int id [] = {}
+//		id = new int[5];
+//		while(id < 5) {
+//			System.out.println("s");
+//			id++;
+//		}
+
+
+		File file = new File(args[0], "blanch.lst");
+		if (file.exists()) {
+
+			// existsはフォルダの存在があるかないかを確認するメソッド
+			System.out.println("ファイルは存在します");
+		} else {
+			System.out.println("ファイルは存在しません");
+		}
+
+
+
+		// Hashmapを宣言する
+
+		try {
+			FileReader fr = new FileReader(file);
+			BufferedReader br = new BufferedReader(fr);
+			String str;
+			while ((str = br.readLine()) != null) {
+				System.out.println(str + " を読み込みました");
+
+				// strをsplitする
+
+				// hashmapにputする
+
+			}
+			br.close();
+		} catch (IOException e) {
+			System.out.println(e);
+		}
+
+
+
+
+
+
+
+
+	}
+
+}
+
+

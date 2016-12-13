@@ -1,0 +1,20 @@
+import com.sun.org.apache.xalan.internal.xsltc.compiler.Pattern;
+
+public class test03 {
+
+	public static void main(String args[]) {
+
+	    //判定する文字列
+	    String str = "123A5";
+
+	    //判定するパターンを生成
+	    Pattern p = Pattern.compile("^[0-9]*$");
+	    Matcher m = p.matcher(str);
+
+	    //画面表示
+	    System.out.println(m.find());
+
+	}
+
+
+}

@@ -1,0 +1,26 @@
+public class test {
+	public static void main(String[] args) {
+		 System.out.println(args[0]);
+
+		/* int i = Integer.parseInt(args[0]);
+		 if (i == 0) {
+			 System.out.println("を保持しました");
+		 }*/
+		 
+
+	 /* try{
+		  File file = new File("C:\\office\\office.txt");
+
+		  FileReader fr = new FileReader(file);
+		  BufferedReader br = new BufferedReader(fr);
+		  String s;
+		  while((s = br.readLine()) != null) {
+			  System.out.println(s + "を保持しました");
+		  }
+		  br.close();
+		  } catch(IOException e) {
+			  System.out.println("「支店定義ファイルが存在しません」");
+		  }*/
+	  }
+  }
+

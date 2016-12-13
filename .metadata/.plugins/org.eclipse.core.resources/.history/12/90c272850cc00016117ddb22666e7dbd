@@ -1,0 +1,22 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+public class test03 {
+
+	public static void main(String args[]) {
+
+	    //判定する文字列
+	    String str = "1235";
+
+	    //判定するパターンを生成
+	    Pattern p = Pattern.compile("^[0-9]*$");
+	    Matcher m = p.matcher(str);
+
+	    //画面表示
+	    System.out.println(m.find());
+	    System.out.println(p + "aa");
+
+
+	}
+
+
+}
