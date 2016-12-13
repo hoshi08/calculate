@@ -13,9 +13,11 @@ public class calculate {
 		System.out.println(args[0]);
 
 		File file = new File(args[0], "blanch.lst");
-		// existsはフォルダの存在があるかないかを確認するメソッド
-		if (file.exists()) {
+		File file1 = new File( file, "commodity.lst");
 
+
+		// existsはフォルダの存在があるかないかを確認するメソッド
+		if (file1.exists()) {
 
 			System.out.println("ファイルは存在し{ます");
 		} else {
@@ -26,7 +28,7 @@ public class calculate {
 
 		// Hashmapを宣言する
 	try {
-			FileReader fr = new FileReader(file);
+			FileReader fr = new FileReader(file1);
 			BufferedReader br = new BufferedReader(fr);
 			while ((str = br.readLine()) != null) {
 				 // strをsplitする
