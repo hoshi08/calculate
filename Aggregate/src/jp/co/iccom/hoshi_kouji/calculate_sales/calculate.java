@@ -14,6 +14,7 @@ public class calculate {
 		System.out.println(args[0]);
 		File file = new File(args[0], "blanch.lst");
 		File file1 = new File(args[0], "commodity.lst");
+		File file2 = new File(args[0], "00000001.rcd");
 
 
 
@@ -21,9 +22,9 @@ public class calculate {
 		// existsはフォルダの存在があるかないかを確認するメソッド
 		if (file.exists()) {
 
-			System.out.println("ファイルは存在します");
+			System.out.println("");
 		} else {
-			System.out.println("ファイルは存在しません");
+			System.out.println("支店定義ファイルは存在しません");
 		}
 
 		HashMap<String, String> blanchcode = new HashMap<String, String>();
@@ -36,9 +37,9 @@ public class calculate {
 				String array[] = str.split(",");
 
 				if (array[0].matches("^\\d{3}")) {
-					System.out.println("チェック結果：OK");
+					System.out.println("");
 				} else {
-					System.out.println("支店定義ファイルが不正です");
+					System.out.println("支店定義ファイルのファーマットが不正です");
 				}
 
 				blanchcode.put(array[0], array[1]);
@@ -53,11 +54,12 @@ public class calculate {
 
 			if (file1.exists()) {
 
-				System.out.println("支店定義ファイルは存在します");
-		} else {
-			System.out.println("支店定義ファイルは存在しません");
-		}
+				System.out.println("");
+			} else {
 
+			System.out.println("商品定義ファイルは存在しません");
+
+			}
 
 		HashMap<String, String> commodity = new HashMap<String,String>();
 
@@ -66,13 +68,22 @@ public class calculate {
 			BufferedReader br = new  BufferedReader(fr);
 			while((str = br.readLine()) != null) {
 				String array[] = str.split(",");
+
+				if (array[0].matches("^[A-Z0-9]{8}$")) {
+					System.out.println("");
+				} else {
+					System.out.println("商品定義ファイルのファーマットが不正です");
+				}
+
 				commodity.put(array[0], array[1]);
+				System.out.println( commodity.entrySet());
+
 			}
-			System.out.println( commodity.entrySet());
 
 			br.close();
 		} catch(IOException a) {
+			System.out.println(a);
 
 		}
-		}
 	}
+}

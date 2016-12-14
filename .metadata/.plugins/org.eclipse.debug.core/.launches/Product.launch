@@ -7,6 +7,6 @@
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="jp.co.iccom.hoshi_kouji.calculate_sales.Product"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="C:\blanch\commodity.lst.xt"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="C:\blanch"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Product"/>
 </launchConfiguration>
