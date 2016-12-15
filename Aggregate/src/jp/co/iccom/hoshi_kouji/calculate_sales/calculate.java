@@ -94,19 +94,19 @@ public class calculate {
 			// rcdファイルかどうかの判定
 			if (f.getName().matches("^\\d{8}.rcd$")) {
 				foo.add(f);
-				System.out.println(f);
+//				System.out.println(f);
 			}
 
 			// 連番チェック
 			// for (File f : foo) {
-			// System.out.println(f);
+			 System.out.println(f);
 
 			// }
-			// // 集計
-			// for (File f : foo) {
-			// System.out.println(f);
-			// try{
-			// }
+			 // 集計
+			 for (File f : foo) {
+			 System.out.println(f);
+			 try{
+			 }
 
 		}
 	}
